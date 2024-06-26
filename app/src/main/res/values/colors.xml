@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main">#029CDA</color>
+    <color name="sub">#42515A</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#f1f3f5</color>
+    <color name="blue">#0000ff</color>
+    <color name="grid_gray">#D9D9D9</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="background">#F3F3F3</color>
+    <color name="stroke">#E9E9E9</color>
+
+    <color name="color1">#B8B8D1</color>
+    <color name="color2">#8C93A8</color>
+    <color name="color3"> #FFC145</color>
+    <color name="color4"> #B33F62</color>
+    <color name="color5">#88CCF1</color>
+    <color name="color6">#8A3033</color>
+    <color name="color7">#6D72C3</color>
+    <color name="color8">#B5C2B7</color>
+    <color name="color9">#628B48</color>
+    <color name="color10">#D8829D</color>
+<!--    #B8B8D1 프렌치그레이-->
+<!--    #8C93A8 그레이-->
+<!--    #FFC145 옐로우-->
+<!--    #B33F62 라즈베리-->
+<!--    #88CCF1 블루-->
+<!--    #8A3033 코도반-->
+<!--    #6D72C3 퍼플-->
+<!--    #B5C2B7 애쉬그레이-->
+<!--    #628B48 펀그린-->
+<!--    #D8829D  푸체-->
+    <color name="colorHeader">#fcfcfc</color>
+    <color name="colorHeaderText">#7d7d7d</color>
+    <color name="colorTableItem">#efefef</color>
+
+    <string-array name="default_sticker_color">
+        <item>#f08676</item>
+        <item>#ecc369</item>
+        <item>#a7ca70</item>
+        <item>#7dd1c1</item>
+        <item>#7aa5e9</item>
+        <item>#fbaa68</item>
+        <item>#9f86e1</item>
+        <item>#78cb87</item>
+        <item>#d397ed</item>
+    </string-array>
+    <color name="default_side_header_font_color">#7d7d7d</color>
+    <color name="default_header_font_color">#7d7d7d</color>
+    <color name="default_header_highlight_font_color">#ffffff</color>
+    <color name="default_header_highlight_color">#74a4f3</color>
+    <color name="default_sticker_font_color">#ffffff</color>
+</resources>

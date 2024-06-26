@@ -1,0 +1,52 @@
+<!-- res/layout/calendar_item -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="date"
+            type="java.util.Date" />
+        <!-- ViewModel or other bindings can be added here -->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ic_schedule_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--        월별 달력 날짜 출력-->
+        <TextView
+            android:id="@+id/itemDayText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingBottom="0sp"
+            android:paddingStart="3sp"
+            android:textSize="15sp"
+            android:paddingEnd="5sp"
+            tools:text="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/scheduleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/itemDayText"
+            app:layout_constraintEnd_toEndOf="@+id/itemDayText"
+            app:layout_constraintTop_toBottomOf="@+id/itemDayText">
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textView_friendTimetableTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="친구의 시간표"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/buttonToCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:background="@drawable/left_square"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="달력"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:text="시간표"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/right_square_check" />
+
+
+    </LinearLayout>
+
+    <com.ilsa1000ri.weatherSecretary.ui.timetable.TimetableView
+        android:id="@+id/friend_timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:header_title="@array/header_title"
+        />
+
+</LinearLayout>

@@ -1,0 +1,286 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_activity_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_round_white_6"
+        android:layout_margin="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="25sp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/nameBox"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름을 입력하세요."
+                android:textColor="@color/black"
+                android:background="@drawable/name_rectangle"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 스타일은?"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="맞춤화된 추천을 위해 네 개의 옵션 중 중 하나를 선택해주세요."
+            android:textSize="13dp"
+            android:textColor="#CCCCCC"
+            android:layout_marginBottom="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/physical"
+                android:textOn="신체적 활동"
+                android:textOff="신체적 활동"
+                android:textSize="15dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/style_toggle_long_off"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/intellectual"
+                android:textColor="@color/black"
+                android:textOn="지적 활동"
+                android:textOff="지적 활동"
+                android:textSize="15dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/style_toggle_long_off"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <!--    사회적 활동, 정신적 활동-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/social"
+                android:textColor="@color/black"
+                android:textOn="사회적 활동"
+                android:textOff="사회적 활동"
+                android:textSize="15dp"
+                android:background="@drawable/style_toggle_long_off"
+                android:layout_weight="0.3"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/creative"
+                android:textOn="정신적 활동"
+                android:textOff="정신적 활동"
+                android:textSize="15dp"
+                android:background="@drawable/style_toggle_long_off"
+                android:layout_weight="0.3"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 민감도는?"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="맞춤화된 추천을 위해 새 개의 옵션 중 하나를 선택해주세요."
+            android:textSize="13dp"
+            android:textColor="#CCCCCC"
+            android:layout_marginBottom="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="더위"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/heatSensitive"
+                android:textColor="@color/black"
+                android:textOn="민감"
+                android:textOff="민감"
+                android:textSize="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/style_toggle_short_off"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/heatAverage"
+                android:textOn="보통"
+                android:textOff="보통"
+                android:textSize="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/style_toggle_short_off"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/heatResistant"
+                android:textOn="둔감"
+                android:textOff="둔감"
+                android:textSize="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/style_toggle_short_off"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추위"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/coldSensitive"
+                android:textOn="민감"
+                android:textOff="민감"
+                android:textSize="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/style_toggle_short_off"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/coldAverage"
+                android:textOn="보통"
+                android:textOff="보통"
+                android:textSize="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/style_toggle_short_off"
+                android:layout_margin="10dp" />
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/coldResistant"
+                android:textOn="둔감"
+                android:textOff="둔감"
+                android:textSize="15dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/style_toggle_short_off"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/doneSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입하기"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/coldResistant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+</ScrollView>

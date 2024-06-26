@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.WeatherSecretary" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryVariant">@color/main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColor" >@color/black</item>
+        <item name="itemIconTint">@color/main</item>
+        <item name="itemTextColor">@color/main</item>
+        <item name="android:windowFullscreen">true</item>
+       <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/main</item>
+
+        <!--       <item name="windowActionBar">false</item>-->
+    </style>
+    <style name="BottomNavigationViewStyle"
+        parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemHorizontalTranslationEnabled">false</item>
+    </style>
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/main</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ColorDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item> <!-- 배경색을 흰색으로 설정 -->
+    </style>
+
+<!--    <style name="AppTheme.Splash" parent="Theme.SplashScreen">-->
+<!--        <item name="windowSplashScreenBackground">@color/main</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>-->
+<!--        <item name="windowSplashScreenAnimationDuration">1000</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.WeatherSecretary</item>-->
+<!--    </style>-->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/main</item>
+    </style>
+
+    <string-array name="color_names">
+        <item>프렌치그레이</item>
+        <item>그레이</item>
+        <item>옐로우</item>
+        <item>라즈베리</item>
+        <item>블루</item>
+        <item>코도반</item>
+        <item>퍼플</item>
+        <item>애쉬그레이</item>
+        <item>펀그린</item>
+        <item>푸제</item>
+    </string-array>
+
+    <array name="event_colors">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+        <item>@color/color6</item>
+        <item>@color/color7</item>
+        <item>@color/color8</item>
+        <item>@color/color9</item>
+        <item>@color/color10</item>
+    </array>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/button_back_to_friends"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_left_24" />
+
+        <TextView
+            android:id="@+id/textView_friendCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/button_back_to_friends"
+            android:layout_alignParentTop="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="37dp"
+            android:gravity="center"
+            android:text="달력"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/left_square_check" />
+
+        <Button
+            android:id="@+id/buttonToTimetable"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:text="시간표"
+            android:textStyle="bold"
+            android:background="@drawable/right_square"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_days_of_week_calendar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
