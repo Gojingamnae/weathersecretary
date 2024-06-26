@@ -49,3 +49,4 @@ captures/
 /app/src/main/res/values/strings.xml
 /app/google-services.json
 /app/src/main/res/navigation/mobile_navigation.xml
+/app/src/main/java/com/ilsa1000ri/weatherSecretary/ui/alarm/NotificationWorker.Kt
