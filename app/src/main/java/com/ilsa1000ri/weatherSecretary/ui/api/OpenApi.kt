@@ -73,8 +73,9 @@ object OpenApi {
         }
     }
 
-    fun getRandomItems(feellike: String?): Pair<String, String>? {
+    fun getRandomItems(latitude: Double, longitude: Double, feellike: String?): Pair<String, String>? {
         val weatherStatus = feellike ?: return null
+        Log.d("weatherStatus", "$weatherStatus")
         val itemsMap = mapOf(
             "temp1" to arrayOf("반바지 ", "민소매 ", "반팔 ", "이온음료 "),
             "temp2" to arrayOf("얇은셔츠 ", "반팔 ", "얇은긴팔 ", "면바지 "),
